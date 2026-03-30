@@ -4,25 +4,20 @@ A CLI tool that lets you search through a PDF using natural language queries. In
 
 ## What it does
 
-- Extracts text from any PDF file
-- Splits the text into chunks of ~200 words
-- Uses HuggingFace's zero-shot classification model (`facebook/bart-large-mnli`) to compare your query against each chunk
-- Returns chunks with confidence scores above 80%
+Extract text from a PDF using a library like pypdf
+Split the text into smaller chunks/paragraphs
+Use Hugging Face Zero-Shot Classification model (`facebook/bart-large-mnli`)to compare a query with each chunk
+Display chunks with high confidence scores (e.g., above 80%)
+
 
 ## Pipeline
 ```
-PDF → Text Extraction (pypdf) → Chunking → Zero-Shot Classification (HuggingFace) → Filtered Results
+PDF -> Text Extraction (pypdf) -> Chunking -> Zero-Shot Classification (HuggingFace) -> Filtered Results
 ```
 
-## How to run
+## NOTE
 
-**1. Clone the repo**
-```
-git clone <your-repo-url>
-cd semantic-pdf-explorer
-```
-
-**2. Create and activate virtual environment**
+**. Create and activate virtual environment**
 ```
 python3 -m venv venv
 source venv/bin/activate
@@ -31,14 +26,6 @@ source venv/bin/activate
 **3. Install dependencies**
 ```
 pip install -r requirements.txt
-```
-
-**4. Run the script**
-```
-python3 explorer.py
-```
-
-**5. Enter the path to your PDF when prompted, then type your queries**
 
 ## Sample queries and outputs
 
@@ -58,12 +45,6 @@ python3 explorer.py
 
 - **File path with quotes** — drag and drop on Mac wraps paths in single quotes, causing `FileNotFoundError`. Fixed by adding `.strip("'\"")` to clean the input, or if not that then just make sure the name of the pdf you're uploading does not have soaces in it like mine did.
 
-## Learnings
-
-- How transformer models work at a high level — specifically zero-shot classification
-- How to use HuggingFace pipelines without training a model from scratch
-- Virtual environments and dependency management in Python
-- How semantic search differs from keyword search
 
 ## Tech stack
 
