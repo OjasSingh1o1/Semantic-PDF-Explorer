@@ -43,19 +43,8 @@ python3 explorer.py
 ## Sample queries and outputs
 
 **Query:** `Assignment tasks`
-```
-Confidence: 98.61%
-Chunk: Do not use sklearn. Use only NumPy. Deliverables: Loss vs Epoch graph...
 
-Confidence: 95.64%
-Chunk: ADVAIT | Focus Groups/Tracks Overview. This document outlines the assignments...
-```
-
-**Query:** `Applied AI assignment`
-```
-Confidence: 83.72%
-Chunk: https://huggingface.co/docs/transformers/index...
-```
+![Query output](images/query-output.png)
 
 ## Approach
 
