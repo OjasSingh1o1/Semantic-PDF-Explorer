@@ -17,13 +17,13 @@ PDF -> Text Extraction (pypdf) -> Chunking -> Zero-Shot Classification (HuggingF
 
 ## NOTE
 
-**. Create and activate virtual environment**
+**1. Create and activate virtual environment**
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-**3. Install dependencies**
+**2. Install dependencies**
 ```
 pip install -r requirements.txt
 
