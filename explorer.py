@@ -8,7 +8,7 @@ def extract_text(pdf_path):
         full_text += page.extract_text() + "\n"
     return full_text
 
-def split_into_chunks(text, chunk_size=200):
+def split_into_chunks(text, chunk_size=180):
     words = text.split()
     chunks = []
     for i in range(0, len(words), chunk_size):
