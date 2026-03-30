@@ -67,7 +67,7 @@ Chunk: https://huggingface.co/docs/transformers/index...
 
 ## Difficulties faced
 
-- **File path with quotes** — drag and drop on Mac wraps paths in single quotes, causing `FileNotFoundError`. Fixed by adding `.strip("'\"")` to clean the input, or if not that then just make sure the name of the pdf you're uploading does not have soaces in it like mine did (ADVAIT _ Focus Group_Tracks (1).pdf)
+- **File path with quotes** — drag and drop on Mac wraps paths in single quotes, causing `FileNotFoundError`. Fixed by adding `.strip("'\"")` to clean the input, or if not that then just make sure the name of the pdf you're uploading does not have soaces in it like mine did.
 
 ## Learnings
 
